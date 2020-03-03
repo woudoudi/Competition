@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.administrator.competition">
+
+    <uses-sdk tools:overrideLibrary="com.yidao.module_lib,com.base.scanlistlibrary,razerdp.library"/>
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".fragment.my.MyIntegralActivity"/>
+        <activity android:name=".fragment.home.HomeGuessActivity" />
+        <activity android:name=".fragment.my.MyAboutUsActivity" />
+        <activity android:name=".fragment.my.MyBetActivity" />
+        <activity android:name=".fragment.my.MyRechargeActivity" />
+        <activity android:name=".fragment.my.MySettingActivity" />
+        <activity android:name=".fragment.my.MyInviteActivity" />
+
+        <activity android:name=".fragment.home.HomeConfrontationSureActivity" />
+        <activity android:name=".fragment.home.HomeFreeConfrontationActivity" />
+        <activity android:name=".fragment.home.HomeKindActivity" />
+        <activity android:name=".fragment.home.HomeRecordActivity" />
+        <activity android:name=".fragment.home.HomeAddConfrontationActivity" />
+
+        <activity android:name=".login.BindPhoneUserActivity" />
+        <activity android:name=".login.LoginAnchorFirstActivity" />
+        <activity android:name=".login.LoginAnchorSecondActivity" />
+        <activity android:name=".login.LoginAnchorThirdActivity" />
+        <activity android:name=".login.LoginUserFirstActivity" />
+        <activity android:name=".login.RegisterUserActivity" />
+        <activity android:name=".login.UpdateUserActivity" />
+
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
