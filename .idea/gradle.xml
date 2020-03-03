@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/module_lib" />
             <option value="$PROJECT_DIR$/scanlistlibrary" />
+            <option value="$PROJECT_DIR$/tbs_live_lib" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

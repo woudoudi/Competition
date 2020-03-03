@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal">
+
+    <include layout="@layout/title_layout_1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:background="@color/color_38364C">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/trumpet_white"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_trumpet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每场收取服务费10%，第一名40%，第二名30%，第三20%"
+            android:textSize="11sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="12dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <TextView
+            android:id="@+id/tv_home_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主场：10/6"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_333333"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/trigger"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/tv_look_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旁观：5642"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_333333"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_f0f0f0"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间：20s"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_333333"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_question_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第8题"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_333333"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="得分：125"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_333333"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

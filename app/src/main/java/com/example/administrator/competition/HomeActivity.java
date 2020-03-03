@@ -35,7 +35,7 @@ public class HomeActivity extends BaseView {
 
     @OnCheckedChanged({R.id.radio_home, R.id.radio_guess, R.id.radio_custom, R.id.radio_my})
     public void onCheckedChanged(CompoundButton view, boolean isCheck) {
-//        setCompentButton(view);
+        setCompentButton(view);
         switch (view.getId()) {
             case R.id.radio_home:
                 if (isCheck) {
@@ -58,6 +58,10 @@ public class HomeActivity extends BaseView {
                 }
                 break;
         }
+    }
+
+    private void setCompentButton(CompoundButton view){
+        view.setTextColor(getResources().getColor(view.isChecked() ? R.color.color_BCA081 : R.color.color_999999));
     }
 
 

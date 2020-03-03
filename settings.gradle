@@ -1,1 +1,1 @@
-include ':app',':scanlistlibrary',':module_lib'
+include ':app',':scanlistlibrary',':module_lib', ':tbs_live_lib'
