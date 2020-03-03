@@ -1,10 +1,5 @@
 package com.example.administrator.competition;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentTransaction;
-import butterknife.OnCheckedChanged;
-
-import android.os.Bundle;
 import android.widget.CompoundButton;
 
 import com.example.administrator.competition.fragment.CustomFragment;
@@ -14,6 +9,9 @@ import com.example.administrator.competition.fragment.MyFragment;
 import com.yidao.module_lib.anotation.FragmentId;
 import com.yidao.module_lib.base.BaseFragment;
 import com.yidao.module_lib.base.BaseView;
+
+import androidx.fragment.app.FragmentTransaction;
+import butterknife.OnCheckedChanged;
 
 public class HomeActivity extends BaseView {
 
