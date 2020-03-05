@@ -3,15 +3,13 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
 
-
-
     defaultConfig {
-        applicationId "com.example.tbs_live_lib"
-        minSdkVersion 15
+        applicationId "com.qgc.anchor.live"
+        minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         ndk {
@@ -38,6 +36,12 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha3'
 
+    //布局注解工具
+    implementation 'com.jakewharton:butterknife:8.0.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.0.1'
+
     implementation 'com.tencent.liteavsdk:LiteAVSDK_Smart:latest.release'
 //    implementation (name:'LiteAVSDK_Smart_6.9.8321',ext:'aar')
+
+    implementation project(':module_lib')
 }
