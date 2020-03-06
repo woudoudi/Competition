@@ -110,4 +110,69 @@
             android:layout_centerVertical="true"/>
     </RelativeLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/guess_layout">
+
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tickerView1"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:ticker_animationDuration="150"
+            android:layout_weight="1"/>
+
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tickerView2"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:ticker_animationDuration="150"
+            android:layout_weight="1"
+            android:text="+"/>
+
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tickerView3"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:ticker_animationDuration="150"
+            android:layout_weight="1"/>
+
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tickerView4"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:ticker_animationDuration="150"
+            android:layout_weight="1"
+            android:text="-"/>
+
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tickerView5"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:ticker_animationDuration="150"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
 </LinearLayout>

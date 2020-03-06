@@ -31,5 +31,7 @@ dependencies {
     implementation 'com.jakewharton:butterknife:8.0.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.0.1'
 
+    implementation 'com.robinhood.ticker:ticker:2.0.2'
+
     implementation project(':module_lib')
 }

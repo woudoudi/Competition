@@ -17,6 +17,7 @@
        android:layout_height="wrap_content">
 
        <TextView
+           android:id="@+id/tv_king"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:text="王者专场"
@@ -32,6 +33,7 @@
 
 
        <TextView
+           android:id="@+id/tv_all_guess"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:text="全名竞技"
@@ -48,6 +50,14 @@
 
 
    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_my"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+    </FrameLayout>
 
 
 

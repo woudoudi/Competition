@@ -12,9 +12,9 @@ import androidx.fragment.app.FragmentPagerAdapter;
 public class GuessAdapter extends FragmentPagerAdapter {
 
     private GuessPrimaryFragment mGuessPrimaryFragment = new GuessPrimaryFragment();
-    private GuessMiddleFragment mGuessMiddleFragment = new GuessMiddleFragment();
-    private GuessHighFragment mGuessHighFragment = new GuessHighFragment();
-    private GuessOneToOneFragment mGuessOneToOneFragment = new GuessOneToOneFragment();
+    private GuessPrimaryFragment mGuessMiddleFragment = new GuessPrimaryFragment();
+    private GuessPrimaryFragment mGuessHighFragment = new GuessPrimaryFragment();
+    private GuessPrimaryFragment mGuessOneToOneFragment = new GuessPrimaryFragment();
     private GuessKingFragment mGuessKingFragment = new GuessKingFragment();
 
     private String[] mTitles = {"初级场", "中级场","高级场","一对一","王者专题"};

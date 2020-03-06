@@ -46,18 +46,41 @@
             android:drawableTop="@drawable/check_guess_selector"
             android:layout_weight="1"
             android:gravity="center"
-            android:padding="3dp"/>
+            android:padding="3dp"
+            android:textColor="@color/color_999999"/>
 
-        <RadioButton
+        <LinearLayout
             android:id="@+id/radio_custom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:button="@null"
-            android:text="客服"
-            android:drawableTop="@drawable/check_custom_selector"
-            android:layout_weight="1"
+            android:orientation="vertical"
             android:gravity="center"
-            android:padding="3dp"/>
+            android:padding="3dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/kefu"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客服"
+                android:textColor="@color/color_999999"/>
+        </LinearLayout>
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/radio_custom"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:button="@null"-->
+            <!--android:text="客服"-->
+            <!--android:drawableTop="@mipmap/kefu"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="3dp"-->
+            <!--android:visibility="gone"/>-->
 
         <RadioButton
             android:id="@+id/radio_my"
@@ -68,7 +91,8 @@
             android:drawableTop="@drawable/check_my_selector"
             android:layout_weight="1"
             android:gravity="center"
-            android:padding="3dp"/>
+            android:padding="3dp"
+            android:textColor="@color/color_999999"/>
 
     </RadioGroup>
 

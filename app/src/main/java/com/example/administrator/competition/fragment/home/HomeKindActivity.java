@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.administrator.competition.R;
+import com.example.administrator.competition.entity.CommonConfig;
 import com.yidao.module_lib.base.BaseView;
 import com.yidao.module_lib.manager.ViewManager;
 
@@ -48,10 +49,14 @@ public class HomeKindActivity extends BaseView {
                 ViewManager.getInstance().finishView();
                 break;
             case R.id.rl_king_live:
-                skipActivity(HomeRecordActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt(CommonConfig.recordAndLiveKey,CommonConfig.LiveValue);
+                skipActivity(HomeRecordActivity.class,bundle);
                 break;
             case R.id.rl_record:
-                skipActivity(HomeRecordActivity.class);
+                bundle = new Bundle();
+                bundle.putInt(CommonConfig.recordAndLiveKey,CommonConfig.recordValue);
+                skipActivity(HomeRecordActivity.class,bundle);
                 break;
             case R.id.rl_free_confrontation:
                 skipActivity(HomeFreeConfrontationActivity.class);

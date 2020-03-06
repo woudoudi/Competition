@@ -1,6 +1,7 @@
 package com.example.administrator.competition.login;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -8,7 +9,10 @@ import android.widget.TextView;
 
 import com.example.administrator.competition.R;
 import com.yidao.module_lib.base.BaseView;
+import com.yidao.module_lib.base.http.ResponseBean;
 import com.yidao.module_lib.manager.ViewManager;
+import com.yidao.module_lib.utils.PhoneUtils;
+import com.yidao.module_lib.utils.ToastUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -48,7 +52,21 @@ public class BindPhoneUserActivity extends BaseView {
             case R.id.tv_get_vCode:
                 break;
             case R.id.iv_next:
+                String phone = etPhone.getText().toString();
+                if (!PhoneUtils.isPhone(phone)) {
+                    ToastUtil.showShortToast("请输入正确的手机号");
+                    return;
+                }
+                if (TextUtils.isEmpty(etVCode.getText())) {
+                    ToastUtil.showShortToast("请先输入验证码");
+                    return;
+                }
                 break;
         }
+    }
+
+    @Override
+    public void onResponse(boolean success, Class requestCls, ResponseBean responseBean) {
+        super.onResponse(success, requestCls, responseBean);
     }
 }

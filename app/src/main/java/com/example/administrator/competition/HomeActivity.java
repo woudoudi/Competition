@@ -1,26 +1,29 @@
 package com.example.administrator.competition;
 
+import android.os.Bundle;
 import android.widget.CompoundButton;
 
-import com.example.administrator.competition.fragment.CustomFragment;
 import com.example.administrator.competition.fragment.GuessFragment;
 import com.example.administrator.competition.fragment.HomeFragment;
 import com.example.administrator.competition.fragment.MyFragment;
+import com.example.administrator.competition.fragment.custom.CustomServiceActivity;
 import com.yidao.module_lib.anotation.FragmentId;
 import com.yidao.module_lib.base.BaseFragment;
 import com.yidao.module_lib.base.BaseView;
 
 import androidx.fragment.app.FragmentTransaction;
+import butterknife.ButterKnife;
 import butterknife.OnCheckedChanged;
+import butterknife.OnClick;
 
 public class HomeActivity extends BaseView {
 
     HomeFragment mHomeFragment = new HomeFragment();
     GuessFragment mGuessFragment = new GuessFragment();
-    CustomFragment mCustomFragment = new CustomFragment();
+    //    CustomFragment mCustomFragment = new CustomFragment();
     MyFragment mMyFragment = new MyFragment();
 
-    BaseFragment[] mBaseFragments = new BaseFragment[]{mHomeFragment, mGuessFragment, mCustomFragment, mMyFragment};
+    BaseFragment[] mBaseFragments = new BaseFragment[]{mHomeFragment, mGuessFragment, mMyFragment};
 
     @Override
     protected int getView() {
@@ -33,7 +36,7 @@ public class HomeActivity extends BaseView {
     }
 
 
-    @OnCheckedChanged({R.id.radio_home, R.id.radio_guess, R.id.radio_custom, R.id.radio_my})
+    @OnCheckedChanged({R.id.radio_home, R.id.radio_guess, R.id.radio_my})
     public void onCheckedChanged(CompoundButton view, boolean isCheck) {
         setCompentButton(view);
         switch (view.getId()) {
@@ -49,18 +52,22 @@ public class HomeActivity extends BaseView {
                 break;
             case R.id.radio_custom:
                 if (isCheck) {
-                    showFragment(FragmentId.Message_Fragment);
                 }
                 break;
             case R.id.radio_my:
                 if (isCheck) {
-                    showFragment(FragmentId.My_Fragment);
+                    showFragment(FragmentId.Message_Fragment);
                 }
                 break;
         }
     }
 
-    private void setCompentButton(CompoundButton view){
+    @OnClick(R.id.radio_custom)
+    public void onViewClicked() {
+        skipActivity(CustomServiceActivity.class);
+    }
+
+    private void setCompentButton(CompoundButton view) {
         view.setTextColor(getResources().getColor(view.isChecked() ? R.color.color_BCA081 : R.color.color_999999));
     }
 

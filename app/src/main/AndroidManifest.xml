@@ -8,6 +8,7 @@
 
 
     <application
+        android:name=".application.ComApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -36,6 +37,11 @@
         <activity android:name=".login.LoginUserFirstActivity" />
         <activity android:name=".login.RegisterUserActivity" />
         <activity android:name=".login.UpdateUserActivity" />
+
+        <activity android:name=".fragment.guess.GuessCompetitionActivity" />
+        <activity android:name=".fragment.guess.GuessRankingActivity" />
+
+        <activity android:name=".fragment.custom.CustomServiceActivity" />
 
         <activity android:name=".HomeActivity">
             <intent-filter>

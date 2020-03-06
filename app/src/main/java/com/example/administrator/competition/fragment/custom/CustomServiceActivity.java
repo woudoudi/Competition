@@ -1,4 +1,4 @@
-package com.example.administrator.competition.fragment.my;
+package com.example.administrator.competition.fragment.custom;
 
 import android.widget.TextView;
 
@@ -9,23 +9,19 @@ import com.yidao.module_lib.manager.ViewManager;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class MyAboutUsActivity extends BaseView {
+public class CustomServiceActivity extends BaseView {
 
     @BindView(R.id.tv_title)
     TextView tvTitle;
 
-    @BindView(R.id.tv_version)
-    TextView tvVersion;
-
     @Override
     protected int getView() {
-        return R.layout.activity_my_about_us;
+        return R.layout.activity_custom;
     }
-
 
     @Override
     public void init() {
-        tvTitle.setText("关于我们");
+        tvTitle.setText("客服");
     }
 
     @OnClick(R.id.iv_back)

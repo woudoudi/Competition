@@ -25,4 +25,5 @@
     <color name="color_FFD24A">#FFD24A</color>
     <color name="color_D90000">#D90000</color>
     <color name="color_CBCBCB">#CBCBCB</color>
+    <color name="black">#000000</color>
 </resources>
